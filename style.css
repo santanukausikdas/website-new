@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:sans-serif;
+    background-color: #6a6363;
+    color: black;
+}
+
+.nav_container{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    font-size: 1.3rem;
+
+    position:fixed;
+}
+
+.nav_right{
+    width: fit-content;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav_left{
+    width: 10rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.nav_left span:hover{
+        color: rgb(196, 191, 191);
+        
+        cursor: pointer;
+}
+
+.nav_left:hover{
+    box-shadow: 0px 0px 10px 1px black;
+    border-radius: 0.5rem;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem;
+    background-image:url(https://img.freepik.com/free-photo/white-bokeh-textured-plain-product-background_53876-102474.jpg?w=996&t=st=1705585053~exp=1705585653~hmac=be44c75e5009ba4b205b206d5c8052ca6340157494243d732cb2225535bfe86e)
+}
+
+.hero_section{
+    position:absolute;
+    margin-top: 5rem;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.hero_cards{
+    display: flex;
+    gap: 5rem;
+    
+    
+}
+
+.card{
+    border: 1px solid black;
+    width: 15rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+}
+
+#card{
+    animation-name: lef;
+    animation: 3s ease-in 1s 1 ;
+}
+
+@keyframe leftright {
+    0%{
+        top:0px;
+        left:0px;
+    }
+    
+    100%{
+        top:0px;
+        left:200px;
+    }
+}
+.frontpage{
+    height: 600px;  ;
+    margin-top: 5rem;
+    width: 100%;
+    color: black;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
